@@ -3,6 +3,10 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import time
 
 import settings
+hostName = settings.get()[0]
+serverPort = settings.get()[1]
+fileRoot = settings.get()[2]
+systemType = settings.get()[3]
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -10,7 +14,7 @@ class MyServer(BaseHTTPRequestHandler):
             self.path += 'index.html'
         
         try:
-            if SystemType = "Windows":
+            if systemType == "Windows":
                 requestedFile = open(fileRoot + self.path.replace('/','\\'), 'r')
             else:
                 requestedFile = open(fileRoot + self.path, 'r')
