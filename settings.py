@@ -10,4 +10,7 @@ serverPort = 8080
 fileRoot = '/home/superbee/Python Projects/html'
 
 #Filestring type. type "Windows" or "Linux/Mac"
-SystemType = 'Linux/Mac'
+systemType = 'Linux/Mac'
+
+def get():
+    return [hostName, serverPort, fileRoot, systemType]
