@@ -1,6 +1,6 @@
 #Read Me First!
 This is a web server made entirely in python.
-This web server currently only supports images,
+This web server currently only supports text,
 but that's a limitation that will be fixed by
 someone that knows how to get it to work.
 
