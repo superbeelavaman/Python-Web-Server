@@ -9,4 +9,3 @@ someone that knows how to get it to work.
 2. Edit settings.py with the correct settings.
 3. Run Webserver.py
 4. if you want to add an html document, just drag & drop it into the html folder. (No restarting the server. Yay.)
-5. if you want a new feature, just add it and make a pull request.
